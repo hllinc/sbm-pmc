@@ -36,7 +36,7 @@ public class SbmPmcApplicationTests {
         userDomain.setPassword("123");
         userDomain.setUserName("hongliang");
         userService.addUser(userDomain);
-        System.out.println(userDomain.getUserId());
+        System.out.println(userDomain.getId());
     }
 
     @Test
@@ -52,7 +52,7 @@ public class SbmPmcApplicationTests {
         userDomain.setPhone("18666666666");
         userDomain.setPassword("666666");
         userDomain.setUserName("hongliang");
-        userDomain.setUserId(1012);
+        userDomain.setId(1);
         userService.updateUser(userDomain);
     }
 
