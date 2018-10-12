@@ -17,7 +17,7 @@ import java.util.List;
 @Service(value = "userService")
 public class UserServiceImpl implements UserService {
     @Autowired
-    private UserMapper userMapper; // 这里会报错，但是不会影响
+    private UserMapper userMapper;
     @Override
     public int addUser(UserDomain userDomain) {
         return userMapper.insertByUser(userDomain);
