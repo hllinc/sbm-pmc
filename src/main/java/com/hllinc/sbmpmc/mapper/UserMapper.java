@@ -11,7 +11,7 @@ import java.util.List;
  **/
 @Mapper
 public interface UserMapper {
-    @Insert("INSERT INTO T_USER(userName, PASSWORD, PHONE) VALUES(#{userName}, #{password}, #{phone})")
+    @Insert("INSERT INTO T_USER(userName, PASSWORD, PHONE, createDateTimestamp) VALUES(#{userName}, #{password}, #{phone}, UNIX_TIMESTAMP(#{createDate}))")
     @Options(useGeneratedKeys = true, keyProperty = "userId")
     int insertByUser(UserDomain user);
 

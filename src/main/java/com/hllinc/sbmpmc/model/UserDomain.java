@@ -5,6 +5,8 @@ import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
 import com.gitee.sunchenbin.mybatis.actable.constants.MySqlTypeConstant;
 import lombok.Data;
 
+import java.util.Date;
+
 /**
  * 用户类
  *
@@ -24,4 +26,7 @@ public class UserDomain {
     private String phone; // 手机号
     @Column(name = "email", type = MySqlTypeConstant.VARCHAR, length = 50)
     private String email; // 邮箱
+    @Column(name = "createDateTimestamp", type=MySqlTypeConstant.INT, length = 11)
+    private Integer createDateTimestamp;
+    private Date createDate;
 }
