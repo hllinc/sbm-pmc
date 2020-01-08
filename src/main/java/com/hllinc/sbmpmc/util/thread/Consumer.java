@@ -21,7 +21,7 @@ public class Consumer implements Runnable {
             System.out.println(queue.take());
             System.out.println(queue.take());
             System.out.println(queue.take());
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
