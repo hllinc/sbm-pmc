@@ -1,4 +1,4 @@
-package com.hllinc.sbmpmc.util.thread;
+package com.hllinc.sbmpmc.util.thread.blockingqueue;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
